@@ -42,8 +42,8 @@
             CantidadCol = new ColumnHeader();
             label7 = new Label();
             ObservacionesText = new TextBox();
-            button4 = new Button();
-            button5 = new Button();
+            EnviarBtn = new Button();
+            CancelarBtn = new Button();
             label8 = new Label();
             label9 = new Label();
             QuitarBtn = new Button();
@@ -164,25 +164,25 @@
             ObservacionesText.Size = new Size(507, 23);
             ObservacionesText.TabIndex = 18;
             // 
-            // button4
+            // EnviarBtn
             // 
-            button4.Location = new Point(264, 484);
-            button4.Margin = new Padding(3, 2, 3, 2);
-            button4.Name = "button4";
-            button4.Size = new Size(153, 30);
-            button4.TabIndex = 19;
-            button4.Text = "Enviar Solicitud";
-            button4.UseVisualStyleBackColor = true;
+            EnviarBtn.Location = new Point(264, 484);
+            EnviarBtn.Margin = new Padding(3, 2, 3, 2);
+            EnviarBtn.Name = "EnviarBtn";
+            EnviarBtn.Size = new Size(153, 30);
+            EnviarBtn.TabIndex = 19;
+            EnviarBtn.Text = "Enviar Solicitud";
+            EnviarBtn.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // CancelarBtn
             // 
-            button5.Location = new Point(435, 484);
-            button5.Margin = new Padding(3, 2, 3, 2);
-            button5.Name = "button5";
-            button5.Size = new Size(82, 30);
-            button5.TabIndex = 20;
-            button5.Text = "Cancelar";
-            button5.UseVisualStyleBackColor = true;
+            CancelarBtn.Location = new Point(435, 484);
+            CancelarBtn.Margin = new Padding(3, 2, 3, 2);
+            CancelarBtn.Name = "CancelarBtn";
+            CancelarBtn.Size = new Size(82, 30);
+            CancelarBtn.TabIndex = 20;
+            CancelarBtn.Text = "Cancelar";
+            CancelarBtn.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -220,8 +220,8 @@
             Controls.Add(QuitarBtn);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(button5);
-            Controls.Add(button4);
+            Controls.Add(CancelarBtn);
+            Controls.Add(EnviarBtn);
             Controls.Add(ObservacionesText);
             Controls.Add(label7);
             Controls.Add(MaterialesListView);
@@ -255,8 +255,8 @@
         private Button button3;
         private Label label7;
         private TextBox ObservacionesText;
-        private Button button4;
-        private Button button5;
+        private Button EnviarBtn;
+        private Button CancelarBtn;
         private Label label8;
         private Label label9;
         private Button QuitarBtn;
