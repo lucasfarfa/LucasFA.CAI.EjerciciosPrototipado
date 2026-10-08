@@ -28,7 +28,19 @@
             //aca pueden ir otras validaciones de negocio.
             //....
 
+            foreach (var det in detalle)
+            {
+                if (det.IdMaterial == material.Id)
+                {
+                    det.Cantidad += cantidad;
+                    return true;
+                }
+            }
+
+
             detalle.Add(new DetalleSolicitud { IdMaterial = material.Id, Cantidad = cantidad });
+
+            return true; //para indicar que está todo bien
         }
     }
 }

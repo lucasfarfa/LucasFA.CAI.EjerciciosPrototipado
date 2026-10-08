@@ -213,6 +213,7 @@
             QuitarBtn.TabIndex = 23;
             QuitarBtn.Text = "Quitar";
             QuitarBtn.UseVisualStyleBackColor = true;
+            QuitarBtn.Click += QuitarBtn_Click;
             // 
             // SolicitudMaterialForm
             // 
