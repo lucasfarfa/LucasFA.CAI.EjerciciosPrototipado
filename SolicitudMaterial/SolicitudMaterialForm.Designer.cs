@@ -44,8 +44,8 @@
             ObservacionesText = new TextBox();
             EnviarBtn = new Button();
             CancelarBtn = new Button();
-            label8 = new Label();
-            label9 = new Label();
+            NombreEmpleadoLabel = new Label();
+            NombreAreaLabel = new Label();
             QuitarBtn = new Button();
             SuspendLayout();
             // 
@@ -184,23 +184,23 @@
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // NombreEmpleadoLabel
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(82, 39);
-            label8.Name = "label8";
-            label8.Size = new Size(134, 15);
-            label8.TabIndex = 21;
-            label8.Text = "[Nombre del empleado]";
+            NombreEmpleadoLabel.AutoSize = true;
+            NombreEmpleadoLabel.Location = new Point(82, 39);
+            NombreEmpleadoLabel.Name = "NombreEmpleadoLabel";
+            NombreEmpleadoLabel.Size = new Size(134, 15);
+            NombreEmpleadoLabel.TabIndex = 21;
+            NombreEmpleadoLabel.Text = "[Nombre del empleado]";
             // 
-            // label9
+            // NombreAreaLabel
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(82, 66);
-            label9.Name = "label9";
-            label9.Size = new Size(103, 15);
-            label9.TabIndex = 22;
-            label9.Text = "[Nombre del area]";
+            NombreAreaLabel.AutoSize = true;
+            NombreAreaLabel.Location = new Point(82, 66);
+            NombreAreaLabel.Name = "NombreAreaLabel";
+            NombreAreaLabel.Size = new Size(103, 15);
+            NombreAreaLabel.TabIndex = 22;
+            NombreAreaLabel.Text = "[Nombre del area]";
             // 
             // QuitarBtn
             // 
@@ -218,8 +218,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(538, 532);
             Controls.Add(QuitarBtn);
-            Controls.Add(label9);
-            Controls.Add(label8);
+            Controls.Add(NombreAreaLabel);
+            Controls.Add(NombreEmpleadoLabel);
             Controls.Add(CancelarBtn);
             Controls.Add(EnviarBtn);
             Controls.Add(ObservacionesText);
@@ -257,8 +257,8 @@
         private TextBox ObservacionesText;
         private Button EnviarBtn;
         private Button CancelarBtn;
-        private Label label8;
-        private Label label9;
+        private Label NombreEmpleadoLabel;
+        private Label NombreAreaLabel;
         private Button QuitarBtn;
     }
 }
