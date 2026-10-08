@@ -13,7 +13,15 @@ namespace LucasFA.CAI.EjerciciosPrototipado
 
         private void SolicitudMaterialForm_Load(object sender, EventArgs e)
         {
+            this.NombreEmpleadoLabel.Text = _modelo.NombreEmpleado;
+            this.NombreAreaLabel.Text = _modelo.NombreArea;
 
+            this.MaterialCombo.DisplayMember = "Nombre";
+            this.MaterialCombo.ValueMember = "Id";
+            foreach (var material in _modelo.Materiales)
+            {
+                this.MaterialCombo.Items.Add(material);
+            }
         }
     }
 }
