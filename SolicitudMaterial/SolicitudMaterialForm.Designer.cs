@@ -78,6 +78,7 @@
             // 
             // MaterialCombo
             // 
+            MaterialCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             MaterialCombo.FormattingEnabled = true;
             MaterialCombo.Location = new Point(12, 141);
             MaterialCombo.Margin = new Padding(3, 2, 3, 2);
@@ -102,6 +103,7 @@
             AgregarBtn.TabIndex = 12;
             AgregarBtn.Text = "Agregar";
             AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.Click += AgregarBtn_Click;
             // 
             // label6
             // 
@@ -232,6 +234,7 @@
             Controls.Add(label5);
             Controls.Add(label3);
             Controls.Add(label2);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(3, 2, 3, 2);
             Name = "SolicitudMaterialForm";
             Text = "SolicitudMaterial";
