@@ -235,6 +235,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "SolicitudMaterialForm";
             Text = "SolicitudMaterial";
+            Load += SolicitudMaterialForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
