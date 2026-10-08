@@ -42,5 +42,32 @@
 
             return true; //para indicar que está todo bien
         }
+
+        internal bool EnviarSolicitud(string observaciones)
+        {
+            //hacer las validaciones, simular los cambios (ej.: baja de stock) etc.
+
+            //si está todo ok...
+            detalle.Clear();
+            return true;
+        }
+
+        //ESTO ESTA MAL: al modelo se le pasan DATOS NO ELEMENTOS DE PANTALLA.
+        /*
+        internal bool QuitarMaterial(ListViewItem linea)
+        {
+
+        }
+        */
+
+        internal bool QuitarMaterial(Material material)
+        {
+            //pueden haber validaciones de negocio X.
+
+            var detalleAEliminar = detalle.FirstOrDefault(d => d.IdMaterial == material.Id);
+            detalle.Remove(detalleAEliminar);
+
+            return true;
+        }
     }
 }

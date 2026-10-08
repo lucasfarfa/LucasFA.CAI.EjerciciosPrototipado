@@ -80,7 +80,36 @@ namespace LucasFA.CAI.EjerciciosPrototipado
 
         private void QuitarBtn_Click(object sender, EventArgs e)
         {
+            if (this.MaterialesListView.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Debe seleccionar un material para quitar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            foreach (var item in this.MaterialesListView.SelectedItems)
+            {
+                var listItem = (ListViewItem)item;
+                if (_modelo.QuitarMaterial((Material)listItem.Tag))
+                {
+                    this.MaterialesListView.Items.Remove(listItem);
+                }
+            }
+        }
+
+        private void CancelarBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void EnviarBtn_Click(object sender, EventArgs e)
+        {
+            if (_modelo.EnviarSolicitud(this.ObservacionesText.Text))
+            {
+                //Limpiar el formulario:
+                this.MaterialesListView.Items.Clear();
+                this.ObservacionesText.Text = "";
+                this.CantidadText.Text = "";
+            }
         }
     }
 }

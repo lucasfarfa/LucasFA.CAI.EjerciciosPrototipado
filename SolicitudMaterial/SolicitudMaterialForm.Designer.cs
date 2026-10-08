@@ -121,7 +121,6 @@
             MaterialesListView.GridLines = true;
             MaterialesListView.Location = new Point(11, 180);
             MaterialesListView.Margin = new Padding(3, 2, 3, 2);
-            MaterialesListView.MultiSelect = false;
             MaterialesListView.Name = "MaterialesListView";
             MaterialesListView.Size = new Size(507, 107);
             MaterialesListView.TabIndex = 14;
@@ -175,6 +174,7 @@
             EnviarBtn.TabIndex = 19;
             EnviarBtn.Text = "Enviar Solicitud";
             EnviarBtn.UseVisualStyleBackColor = true;
+            EnviarBtn.Click += EnviarBtn_Click;
             // 
             // CancelarBtn
             // 
@@ -185,6 +185,7 @@
             CancelarBtn.TabIndex = 20;
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.Click += CancelarBtn_Click;
             // 
             // NombreEmpleadoLabel
             // 
