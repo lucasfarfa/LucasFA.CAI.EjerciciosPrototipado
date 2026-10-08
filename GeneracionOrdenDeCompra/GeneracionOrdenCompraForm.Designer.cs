@@ -214,7 +214,6 @@
             label7.Size = new Size(45, 20);
             label7.TabIndex = 12;
             label7.Text = "Total:";
-            label7.Click += this.label7_Click;
             // 
             // contextMenuStrip2
             // 
